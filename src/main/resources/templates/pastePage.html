@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" th:href="@{/style.css}">
+    <title>Paste</title>
+</head>
+<body>
+    <div class="pageheader">
+        <a href="/" class="headerbutton"><div>Pastebin</div></a>
+        <a href="/about" class="headerbutton"><div>About</div></a>
+    </div>
+    <form th:action="@{/paste}" th:object="${paste}" th:method="POST">
+        <div class="textpastearea">
+            <textarea name="pastearea" id="textarea" placeholder="Enter your paste here✏️" th:field="*{text}" th:text="${paste.getText()}"></textarea>
+            <input type="submit" value="Add paste">
+        </div>
+        
+    </form>
+</body>
+</html>
