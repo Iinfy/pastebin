@@ -21,6 +21,9 @@ When you try to get paste, it caches with Redis, cache stores for 60 minutes**
 For use Pastebin you should download source code and compile it using [maven](https://maven.apache.org/)<br>
 After getting .jar package, run it using java -jar PACKAGE_NAME in console**
 
+## Properties
+If you want to enable /deleteall command in api, you should '''deleteall.enabled=true''' in application properties
+
 ## Contacts
 [Github](https://github.com/Iinfy)<br>
 Mail: infywmail@gmail.com
